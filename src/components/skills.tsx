@@ -25,7 +25,7 @@ const frontendTech = [
   },
   {
     node: (
-      <SkillLogo title="tailwindCss">
+      <SkillLogo title="TailwindCss">
         <StackIcon name="tailwindcss" className="w-6 h-6" />
       </SkillLogo>
     ),
@@ -39,7 +39,7 @@ const frontendTech = [
   },
   {
     node: (
-      <SkillLogo title="zustand">
+      <SkillLogo title="Zustand">
         <StackIcon name="zustand" className="w-6 h-6" />
       </SkillLogo>
     ),
@@ -94,10 +94,10 @@ const backendTech = [
 export default function Skills() {
   return (
     <div className="  mt-12 flex flex-col ">
-      <h1 className="text-xl">Tools that I have used</h1>
+      <h1 className="text-xl font-geist">Tools that I have used</h1>
       <div
         // style={{ height: "200px", position: "relative", overflow: "hidden" }}
-        className="flex flex-col gap-1 relative overflow-hidden  h-fit "
+        className="flex flex-col  relative overflow-hidden  h-fit "
       >
         {/* Basic horizontal loop */}
         <LogoLoop
@@ -109,6 +109,7 @@ export default function Skills() {
           hoverSpeed={0}
           scaleOnHover
           ariaLabel="Technology partners-1s"
+          className="font-figtree"
         />
         <LogoLoop
           logos={backendTech}
@@ -119,6 +120,7 @@ export default function Skills() {
           hoverSpeed={0}
           scaleOnHover
           ariaLabel="Technology partners-2"
+          className="font-figtree"
         />
       </div>
     </div>

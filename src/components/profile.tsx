@@ -21,7 +21,9 @@ export default function Profile() {
         <img src={whiplash} className="w-32 h-32 rounded-xl " />
       </div>
       <div className="flex flex-col pl-42 gap-2">
-        <h1 className="text-2xl">Ankit Panwar</h1>
+        <h1 className="text-5xl font-geist font-bold tracking-tight">
+          Ankit Panwar
+        </h1>
         <div className="flex gap-2 text-lg items-center  text-[#b4b4b4]">
           <h1>Full-Stack Developer</h1>
         </div>
