@@ -1,46 +1,47 @@
 import StackIcon from "tech-stack-icons";
 import LogoLoop from "./LogoLoop";
 import SkillLogo from "./skills-logos";
+
 const frontendTech = [
   {
     node: (
       <SkillLogo title="TypeScript">
-        <StackIcon name="typescript" className="w-6 h-6 " />
+        <StackIcon name="typescript" className="w-5 h-5" />
       </SkillLogo>
     ),
   },
   {
     node: (
       <SkillLogo title="JavaScript">
-        <StackIcon name="js" className="w-6 h-6 " />
+        <StackIcon name="js" className="w-5 h-5" />
       </SkillLogo>
     ),
   },
   {
     node: (
       <SkillLogo title="React">
-        <StackIcon name="react" className="w-6 h-6 " />
+        <StackIcon name="react" className="w-5 h-5" />
       </SkillLogo>
     ),
   },
   {
     node: (
-      <SkillLogo title="TailwindCss">
-        <StackIcon name="tailwindcss" className="w-6 h-6" />
+      <SkillLogo title="Tailwind CSS">
+        <StackIcon name="tailwindcss" className="w-5 h-5" />
       </SkillLogo>
     ),
   },
   {
     node: (
-      <SkillLogo title="NextJs">
-        <StackIcon name="nextjs2" className="w-6 h-6 " />
+      <SkillLogo title="Next.js">
+        <StackIcon name="nextjs2" className="w-5 h-5" />
       </SkillLogo>
     ),
   },
   {
     node: (
       <SkillLogo title="Zustand">
-        <StackIcon name="zustand" className="w-6 h-6" />
+        <StackIcon name="zustand" className="w-5 h-5" />
       </SkillLogo>
     ),
   },
@@ -49,43 +50,43 @@ const frontendTech = [
 const backendTech = [
   {
     node: (
-      <SkillLogo title="NodeJs">
-        <StackIcon name="nodejs" className="w-6 h-6" />
+      <SkillLogo title="Node.js">
+        <StackIcon name="nodejs" className="w-5 h-5" />
       </SkillLogo>
     ),
   },
   {
     node: (
-      <SkillLogo title="ExpressJs">
-        <StackIcon name="expressjs" className="w-6 h-6" />
+      <SkillLogo title="Express.js">
+        <StackIcon name="expressjs" className="w-5 h-5" />
       </SkillLogo>
     ),
   },
   {
     node: (
       <SkillLogo title="PostgreSQL">
-        <StackIcon name="postgresql" className="w-6 h-6" />
+        <StackIcon name="postgresql" className="w-5 h-5" />
       </SkillLogo>
     ),
   },
   {
     node: (
       <SkillLogo title="Redis">
-        <StackIcon name="redis" className="w-6 h-6" />
+        <StackIcon name="redis" className="w-5 h-5" />
       </SkillLogo>
     ),
   },
   {
     node: (
       <SkillLogo title="Docker">
-        <StackIcon name="docker" className="w-6 h-6" />
+        <StackIcon name="docker" className="w-5 h-5" />
       </SkillLogo>
     ),
   },
   {
     node: (
       <SkillLogo title="AWS">
-        <StackIcon name="aws" className="w-6 h-6" />
+        <StackIcon name="aws" className="w-5 h-5" />
       </SkillLogo>
     ),
   },
@@ -93,41 +94,41 @@ const backendTech = [
 
 export default function Skills() {
   return (
-    <div className="flex flex-col ">
+    <section className="flex flex-col  w-full">
       <div className="flex items-center gap-4">
         <h1 className="text-2xl font-semibold text-zinc-100 font-geist tracking-tight">
           Skills & Tools
         </h1>
         <div className="h-[1px] flex-grow bg-gradient-to-r from-zinc-800 to-transparent"></div>
       </div>
-      <div
-        // style={{ height: "200px", position: "relative", overflow: "hidden" }}
-        className="flex flex-col  relative overflow-hidden  h-fit "
-      >
-        {/* Basic horizontal loop */}
+
+      <div className="flex flex-col gap-1 relative overflow-hidden w-full py-2">
         <LogoLoop
           logos={frontendTech}
-          speed={50}
+          speed={35}
           direction="left"
-          logoHeight={60}
-          gap={30}
-          hoverSpeed={0}
+          logoHeight={48}
+          gap={24}
+          hoverSpeed={10}
           scaleOnHover
-          ariaLabel="Technology partners-1s"
-          className="font-figtree"
+          fadeOut={true}
+          fadeOutColor="#060010"
+          ariaLabel="Frontend Technology Stack"
         />
+
         <LogoLoop
           logos={backendTech}
-          speed={50}
+          speed={35}
           direction="right"
-          logoHeight={60}
-          gap={30}
-          hoverSpeed={0}
+          logoHeight={48}
+          gap={24}
+          hoverSpeed={10}
           scaleOnHover
-          ariaLabel="Technology partners-2"
-          className="font-figtree"
+          fadeOut={true}
+          fadeOutColor="#060010"
+          ariaLabel="Backend Technology Stack"
         />
       </div>
-    </div>
+    </section>
   );
 }
