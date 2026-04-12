@@ -8,8 +8,13 @@ export function GithubHeatmaps() {
   };
 
   return (
-    <div className="mt-12 flex flex-col gap-2 ">
-      <h1 className="text-xl font-geist">My Contribution</h1>
+    <div className=" flex flex-col gap-2 ">
+      <div className="flex items-center gap-4">
+        <h1 className="text-2xl font-semibold text-zinc-100 font-geist tracking-tight">
+          Github Activity
+        </h1>
+        <div className="h-[1px] flex-grow bg-gradient-to-r from-zinc-800 to-transparent"></div>
+      </div>
       <div className="p-6 border border-zinc-800 rounded-xl bg-[#0d1117]">
         <GitHubCalendar
           username="ankitpwr"

@@ -1,7 +1,6 @@
 import type { ReactNode } from "react";
 import BorderGlow from "./BorderGlow";
-import { GithubLogoIcon, GlobeIcon } from "@phosphor-icons/react";
-import ContactBox from "./contact-box";
+import { GithubLogo, Globe } from "@phosphor-icons/react";
 
 interface Props {
   projectTitle: string;
@@ -11,6 +10,7 @@ interface Props {
   techstack: string[];
   children: ReactNode;
 }
+
 export default function Project({
   projectTitle,
   projectDescription,
@@ -23,30 +23,59 @@ export default function Project({
     <BorderGlow
       edgeSensitivity={18}
       glowColor="40 80 80"
-      backgroundColor="#060010"
+      backgroundColor="#0a0a0a"
       borderRadius={21}
       glowRadius={40}
       glowIntensity={0.8}
       coneSpread={24}
       animated={false}
       colors={["#c084fc", "#f472b6", "#38bdf8"]}
+      className="h-full"
     >
-      <div className="flex flex-col rounded p-2 font-geist">
-        {children}
-        <div className="flex justify-between p-4">
-          <h1 className="text-lg">{projectTitle}</h1>
-          <div className="flex gap-4">
-            <GlobeIcon size={24} />
-            <GithubLogoIcon size={24} weight="bold" />
-          </div>
+      <div className="flex flex-col h-full rounded-[20px] p-2 font-geist bg-zinc-950/50">
+        <div className="overflow-hidden rounded-xl border border-zinc-800/50 aspect-video w-full bg-zinc-900">
+          {children}
         </div>
-        <div className="flex flex-col p-4">
-          <p>{projectDescription}</p>
-          <div className="flex gap-2 ">
+
+        <div className="flex flex-col flex-grow p-4 gap-3">
+          <div className="flex justify-between items-center">
+            <h2 className="text-xl font-semibold tracking-tight text-zinc-100">
+              {projectTitle}
+            </h2>
+            <div className="flex gap-3 text-zinc-400">
+              <a
+                href={liveLink}
+                target="_blank"
+                rel="noreferrer"
+                className="hover:text-white transition-colors duration-200"
+              >
+                <Globe size={22} weight="regular" />
+              </a>
+              <a
+                href={githubLink}
+                target="_blank"
+                rel="noreferrer"
+                className="hover:text-white transition-colors duration-200"
+              >
+                <GithubLogo size={22} weight="regular" />
+              </a>
+            </div>
+          </div>
+
+          {/* Description: Uses flex-grow to push the tech stack to the bottom */}
+          <p className="text-sm text-zinc-400 leading-relaxed flex-grow">
+            {projectDescription}
+          </p>
+
+          {/* Tech Stack Badges */}
+          <div className="flex flex-wrap gap-2 mt-4">
             {techstack.map((tech, index) => (
-              <h1 key={index} className="k">
+              <span
+                key={index}
+                className="text-xs font-medium px-2.5 py-1 rounded-md bg-zinc-800/40 text-zinc-300 border border-zinc-700/50"
+              >
                 {tech}
-              </h1>
+              </span>
             ))}
           </div>
         </div>

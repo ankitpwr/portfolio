@@ -13,7 +13,6 @@ export default function ContactBox({ title, link, children }: Props) {
       className="bg-[#151418] text-base border border-[#292929] flex justify-center text-center items-center px-3 py-2 gap-2 rounded-lg font-figtree"
     >
       {children}
-      <p>{title}</p>
     </div>
   );
 }

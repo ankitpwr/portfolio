@@ -9,8 +9,7 @@ import ContactBox from "./contact-box";
 
 export default function Contacts() {
   return (
-    <div className="  mt-12 flex flex-col gap-2 ">
-      <h1 className="text-xl font-geist">Contacts</h1>
+    <div className=" mt-4 flex flex-col gap-2 ">
       <div className=" flex  gap-3 ">
         <ContactBox title="Twitter" link="https://x.com/ankit_pam">
           {" "}

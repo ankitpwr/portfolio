@@ -93,8 +93,13 @@ const backendTech = [
 
 export default function Skills() {
   return (
-    <div className="  mt-12 flex flex-col ">
-      <h1 className="text-xl font-geist">Tools that I have used</h1>
+    <div className="flex flex-col ">
+      <div className="flex items-center gap-4">
+        <h1 className="text-2xl font-semibold text-zinc-100 font-geist tracking-tight">
+          Skills & Tools
+        </h1>
+        <div className="h-[1px] flex-grow bg-gradient-to-r from-zinc-800 to-transparent"></div>
+      </div>
       <div
         // style={{ height: "200px", position: "relative", overflow: "hidden" }}
         className="flex flex-col  relative overflow-hidden  h-fit "
