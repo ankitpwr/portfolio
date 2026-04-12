@@ -4,7 +4,7 @@ import orbit from "../assets/orbit-lookup-1.png";
 
 export default function FeaturedProjects() {
   return (
-    <section className=" flex flex-col gap-2 w-full">
+    <section className=" flex flex-col gap-3 w-full">
       {/* Section Header with sleek horizontal line */}
       <div className="flex items-center gap-4">
         <h1 className="text-2xl font-semibold text-zinc-100 font-geist tracking-tight">

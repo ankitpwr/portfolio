@@ -51,7 +51,7 @@ const backendTech = [
   {
     node: (
       <SkillLogo title="Node.js">
-        <StackIcon name="nodejs" className="w-5 h-5" />
+        <StackIcon name="nodejs" variant="dark" className="w-5 h-5" />
       </SkillLogo>
     ),
   },
@@ -59,6 +59,13 @@ const backendTech = [
     node: (
       <SkillLogo title="Express.js">
         <StackIcon name="expressjs" className="w-5 h-5" />
+      </SkillLogo>
+    ),
+  },
+  {
+    node: (
+      <SkillLogo title="WebSocket">
+        <StackIcon name="socketio" className="w-5 h-5" />
       </SkillLogo>
     ),
   },

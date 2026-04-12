@@ -9,7 +9,7 @@ import Skills from "@/components/skills";
 export default function Home() {
   return (
     <div className="min-h-screen  text-white  flex flex-col">
-      <main className="mx-auto w-full max-w-3xl  pb-24">
+      <main className="mx-auto w-full max-w-200  pb-24">
         <Banner />
         <Profile />
         <Description />

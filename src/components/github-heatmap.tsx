@@ -1,30 +1,38 @@
 import { GitHubCalendar } from "react-github-calendar";
 
 export function GithubHeatmaps() {
-  // Custom grayscale theme matching your image
-  const minimalTheme = {
-    light: ["#f0f0f0", "#c4c4c4", "#a0a0a0", "#7a7a7a", "#4d4d4d"],
-    dark: ["#1a1a1a", "#333333", "#4d4d4d", "#666666", "#808080"],
+  // Sleek, high-contrast monochrome theme matching Tailwind's Zinc scale
+  const explicitTheme = {
+    light: ["#f4f4f5", "#d4d4d8", "#a1a1aa", "#71717a", "#3f3f46"],
+    dark: ["#18181b", "#27272a", "#3f3f46", "#71717a", "#a1a1aa"],
   };
 
   return (
-    <div className=" flex flex-col gap-2 ">
+    <section className="flex flex-col gap-6 w-full">
+      {/* Section Header */}
       <div className="flex items-center gap-4">
         <h1 className="text-2xl font-semibold text-zinc-100 font-geist tracking-tight">
-          Github Activity
+          GitHub Activity
         </h1>
         <div className="h-[1px] flex-grow bg-gradient-to-r from-zinc-800 to-transparent"></div>
       </div>
-      <div className="p-6 border border-zinc-800 rounded-xl bg-[#0d1117]">
+
+      {/* Calendar Container */}
+      <div className="rounded-[20px]  backdrop-blur-sm flex justify-center overflow-hidden w-full font-geist">
         <GitHubCalendar
           username="ankitpwr"
           colorScheme="dark"
-          theme={minimalTheme}
-          blockSize={12}
+          theme={explicitTheme}
+          blockSize={11}
           blockMargin={4}
-          fontSize={12}
+          fontSize={14}
+          style={{
+            color: "#a1a1aa", // Forces the text to match text-zinc-400
+            padding: "2px",
+          }}
+          year={"last"}
         />
       </div>
-    </div>
+    </section>
   );
 }
