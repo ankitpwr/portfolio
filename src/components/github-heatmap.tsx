@@ -1,3 +1,4 @@
+import { githubUsername } from "@/data/profile";
 import { GitHubCalendar } from "react-github-calendar";
 
 export function GithubHeatmaps() {
@@ -20,7 +21,7 @@ export function GithubHeatmaps() {
       {/* Calendar Container */}
       <div className="rounded-[20px]  backdrop-blur-sm flex justify-center overflow-hidden w-full font-geist">
         <GitHubCalendar
-          username="ankitpwr"
+          username={githubUsername}
           colorScheme="dark"
           theme={explicitTheme}
           blockSize={11}

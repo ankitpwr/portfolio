@@ -1,103 +1,23 @@
 import StackIcon from "tech-stack-icons";
 import LogoLoop from "./LogoLoop";
 import SkillLogo from "./skills-logos";
+import { BackendSkill, FrontendSkill } from "@/data/skills";
 
-const frontendTech = [
-  {
-    node: (
-      <SkillLogo title="TypeScript">
-        <StackIcon name="typescript" className="w-5 h-5" />
-      </SkillLogo>
-    ),
-  },
-  {
-    node: (
-      <SkillLogo title="JavaScript">
-        <StackIcon name="js" className="w-5 h-5" />
-      </SkillLogo>
-    ),
-  },
-  {
-    node: (
-      <SkillLogo title="React">
-        <StackIcon name="react" className="w-5 h-5" />
-      </SkillLogo>
-    ),
-  },
-  {
-    node: (
-      <SkillLogo title="Tailwind CSS">
-        <StackIcon name="tailwindcss" className="w-5 h-5" />
-      </SkillLogo>
-    ),
-  },
-  {
-    node: (
-      <SkillLogo title="Next.js">
-        <StackIcon name="nextjs2" className="w-5 h-5" />
-      </SkillLogo>
-    ),
-  },
-  {
-    node: (
-      <SkillLogo title="Zustand">
-        <StackIcon name="zustand" className="w-5 h-5" />
-      </SkillLogo>
-    ),
-  },
-];
+const frontendTech = FrontendSkill.map((skill) => ({
+  node: (
+    <SkillLogo title={`${skill.charAt(0).toUpperCase() + skill.slice(1)}`}>
+      <StackIcon name={`${skill}`} variant="dark" className="w-4 h-4" />
+    </SkillLogo>
+  ),
+}));
 
-const backendTech = [
-  {
-    node: (
-      <SkillLogo title="Node.js">
-        <StackIcon name="nodejs" variant="dark" className="w-5 h-5" />
-      </SkillLogo>
-    ),
-  },
-  {
-    node: (
-      <SkillLogo title="Express.js">
-        <StackIcon name="expressjs" className="w-5 h-5" />
-      </SkillLogo>
-    ),
-  },
-  {
-    node: (
-      <SkillLogo title="WebSocket">
-        <StackIcon name="socketio" className="w-5 h-5" />
-      </SkillLogo>
-    ),
-  },
-  {
-    node: (
-      <SkillLogo title="PostgreSQL">
-        <StackIcon name="postgresql" className="w-5 h-5" />
-      </SkillLogo>
-    ),
-  },
-  {
-    node: (
-      <SkillLogo title="Redis">
-        <StackIcon name="redis" className="w-5 h-5" />
-      </SkillLogo>
-    ),
-  },
-  {
-    node: (
-      <SkillLogo title="Docker">
-        <StackIcon name="docker" className="w-5 h-5" />
-      </SkillLogo>
-    ),
-  },
-  {
-    node: (
-      <SkillLogo title="AWS">
-        <StackIcon name="aws" className="w-5 h-5" />
-      </SkillLogo>
-    ),
-  },
-];
+const backendTech = BackendSkill.map((skill) => ({
+  node: (
+    <SkillLogo title={`${skill.charAt(0).toUpperCase() + skill.slice(1)}`}>
+      <StackIcon name={`${skill}`} variant="dark" className="w-4 h-4" />
+    </SkillLogo>
+  ),
+}));
 
 export default function Skills() {
   return (

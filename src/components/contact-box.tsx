@@ -10,9 +10,10 @@ export default function ContactBox({ title, link, children }: Props) {
   return (
     <div
       onClick={() => (window.location.href = link)}
-      className="bg-[#151418] text-base border border-[#292929] flex justify-center text-center items-center px-3 py-2 gap-2 rounded-lg font-figtree"
+      className="bg-[#151418] text-sm border border-[#292929] flex justify-center text-center items-center px-3 py-2 gap-2 cursor-pointer  rounded-lg font-figtree"
     >
       {children}
+      {title}
     </div>
   );
 }

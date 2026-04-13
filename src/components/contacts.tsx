@@ -6,35 +6,35 @@ import {
   XLogoIcon,
 } from "@phosphor-icons/react";
 import ContactBox from "./contact-box";
+import {
+  Email,
+  Github,
+  LinkedIn,
+  Resume,
+  Twitter,
+  type ContactData,
+} from "@/data/contacts";
 
 export default function Contacts() {
+  const availableContacts: ContactData[] = [
+    Github,
+    Twitter,
+    LinkedIn,
+    Email,
+    Resume,
+  ];
   return (
-    <div className=" mt-4 flex flex-col gap-2 ">
-      <div className=" flex  gap-3 ">
-        <ContactBox title="Twitter" link="https://x.com/ankit_pam">
-          {" "}
-          <XLogoIcon size={18} />
-        </ContactBox>
-        <ContactBox title="Github" link="https://x.com/ankit_pam">
-          {" "}
-          <GithubLogoIcon size={18} />
-        </ContactBox>
+    <div className=" mt-4 flex  gap-3">
+      {availableContacts.map((contact) => {
+        const IconComponent = contact.icon;
 
-        <ContactBox title="Email" link="https://x.com/ankit_pam">
-          {" "}
-          <EnvelopeSimpleIcon size={18} />
-        </ContactBox>
-
-        <ContactBox title="Linkedin" link="https://x.com/ankit_pam">
-          {" "}
-          <LinkedinLogoIcon size={18} />
-        </ContactBox>
-
-        <ContactBox title="Resume" link="https://x.com/ankit_pam">
-          {" "}
-          <FileArrowDownIcon size={18} />
-        </ContactBox>
-      </div>
+        return (
+          <ContactBox title={contact.title} link={contact.link}>
+            {" "}
+            <IconComponent size={18} />
+          </ContactBox>
+        );
+      })}
     </div>
   );
 }

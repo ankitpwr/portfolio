@@ -62,7 +62,6 @@ export default function Project({
             </div>
           </div>
 
-          {/* Description: Uses flex-grow to push the tech stack to the bottom */}
           <p className="text-sm text-zinc-400 leading-relaxed flex-grow">
             {projectDescription}
           </p>
