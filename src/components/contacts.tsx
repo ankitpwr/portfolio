@@ -1,10 +1,3 @@
-import {
-  EnvelopeSimpleIcon,
-  FileArrowDownIcon,
-  GithubLogoIcon,
-  LinkedinLogoIcon,
-  XLogoIcon,
-} from "@phosphor-icons/react";
 import ContactBox from "./contact-box";
 import {
   Email,
@@ -23,15 +16,22 @@ export default function Contacts() {
     Email,
     Resume,
   ];
+
   return (
-    <div className=" mt-4 flex  gap-3">
+    <div className="mt-4 px-2 sm:px-4 flex flex-wrap gap-3">
       {availableContacts.map((contact) => {
         const IconComponent = contact.icon;
 
         return (
-          <ContactBox title={contact.title} link={contact.link}>
-            {" "}
-            <IconComponent size={18} />
+          <ContactBox
+            key={contact.title}
+            title={contact.title}
+            link={contact.link}
+          >
+            <IconComponent
+              size={18}
+              className="transition-colors duration-300"
+            />
           </ContactBox>
         );
       })}

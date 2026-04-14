@@ -15,19 +15,20 @@ export default function Profile() {
   }, []);
 
   return (
-    <div className="relative z-10 flex flex-col sm:flex-row items-start sm:items-end gap-4 sm:gap-6  px-2 sm:px-4">
-      <div className="rounded-2xl bg-[#060010]  -mt-12 p-1.5 shadow-xl border border-white/10 cursor-">
+    <div className="relative z-10 flex flex-col sm:flex-row items-start sm:items-end gap-4 sm:gap-6 px-2 sm:px-4">
+      {/* Avatar Container: Added white background and zinc-200 border for light mode */}
+      <div className="rounded-2xl bg-white dark:bg-[#060010] -mt-12 p-1.5 shadow-xl border border-zinc-200 dark:border-white/10 transition-colors duration-300">
         <PixelTransition
           firstContent={
             <img
               src={profileImage}
-              className="h-28 w-28 sm:h-32 sm:w-32 rounded-xl object-cover grayscale hover:grayscale-0 transition-all duration-500"
+              className="h-28 w-28 sm:h-32 sm:w-32 rounded-xl object-cover grayscale dark:grayscale hover:grayscale-0 transition-all duration-500"
             />
           }
           secondContent={
             <img
               src={profileImage}
-              className="h-28 w-28 sm:h-32 sm:w-32 rounded-xl object-cover "
+              className="h-28 w-28 sm:h-32 sm:w-32 rounded-xl object-cover"
             />
           }
           gridSize={8}
@@ -39,20 +40,21 @@ export default function Profile() {
       </div>
 
       {/* Info Container */}
-      <div className="flex flex-col gap-1.5 pb-2 ">
-        <h1 className="font-geist text-3xl sm:text-4xl font-bold tracking-tight text-zinc-100">
+      <div className="flex flex-col gap-1.5 pb-2">
+        <h1 className="font-geist text-3xl sm:text-4xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100 transition-colors duration-300">
           {name}
         </h1>
-        <div className="font-geist text-base font-medium text-zinc-400">
+        <div className="font-geist text-base font-medium text-zinc-600 dark:text-zinc-400 transition-colors duration-300">
           {role}
         </div>
 
-        <div className="mt-1 flex flex-wrap gap-4 font-mono text-xs text-zinc-500">
-          <div className="flex items-center gap-1.5 rounded-full bg-white/5 px-2.5 py-1 border border-white/10">
+        {/* Badges: Added zinc-100 backgrounds for light mode */}
+        <div className="mt-1 flex flex-wrap gap-4 font-mono text-xs text-zinc-600 dark:text-zinc-400">
+          <div className="flex items-center gap-1.5 rounded-full bg-zinc-100 dark:bg-white/5 px-2.5 py-1 border border-zinc-200 dark:border-white/10 transition-colors duration-300">
             <MapPin weight="fill" />
             <span>{location}</span>
           </div>
-          <div className="flex items-center gap-1.5 rounded-full bg-white/5 px-2.5 py-1 border border-white/10">
+          <div className="flex items-center gap-1.5 rounded-full bg-zinc-100 dark:bg-white/5 px-2.5 py-1 border border-zinc-200 dark:border-white/10 transition-colors duration-300">
             <Clock weight="fill" />
             <span suppressHydrationWarning>{time}</span>
           </div>
