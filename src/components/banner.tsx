@@ -2,7 +2,7 @@ import { banner } from "@/data/profile";
 
 export default function Banner() {
   return (
-    <div className="relative w-full h-36  overflow-hidden shadow-2xl">
+    <div className="relative w-full h-36  overflow-hidden shadow-sm">
       <img
         src={banner}
         className="w-full object-cover grayscale hover:grayscale-0 transition-all duration-400"

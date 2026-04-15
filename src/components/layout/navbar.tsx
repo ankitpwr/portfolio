@@ -1,10 +1,12 @@
 import DecryptedText from "../DecryptedText";
 import { DarkModeSwitch } from "react-toggle-dark-mode";
 import { useTheme } from "../theme-provider";
+import { useSound } from "@/hooks/use-sound";
+import { clickSoftSound } from "../../lib/click-soft";
 
 export default function Navbar() {
   const { theme, setTheme } = useTheme();
-
+  const [play] = useSound(clickSoftSound);
   const isDarkMode = theme === "dark";
 
   const toggleDarkMode = (checked: boolean) => {
@@ -40,6 +42,7 @@ export default function Navbar() {
           </a>
 
           <DarkModeSwitch
+            onClick={() => play()}
             size={18}
             sunColor="#52525b"
             moonColor="#e4e4e7"
