@@ -10,7 +10,7 @@ import Skills from "@/components/skills";
 export default function Home() {
   return (
     <div className="min-h-screen flex flex-col transition-colors duration-300">
-      <main className="mx-auto w-full max-w-[51rem]">
+      <main className="mx-auto max-w-[53rem]">
         {" "}
         {/* max-w-204 translates to ~51rem */}
         <Banner />

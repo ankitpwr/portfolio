@@ -3,14 +3,16 @@ export const FrontendSkill: string[] = [
   "js",
   "react",
   "tailwindcss",
-  "nextjs2",
+  "nextjs",
   "zustand",
+  "bunjs",
 ];
 
 export const BackendSkill: string[] = [
   "nodejs",
   "expressjs",
   "socketio",
+  "prisma",
   "postgresql",
   "redis",
   "docker",

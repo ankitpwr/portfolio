@@ -33,7 +33,7 @@ export const Twitter: ContactData = {
 
 export const Email: ContactData = {
   title: "Email",
-  link: "mailto:ankit@example.com",
+  link: "mailto:ankitpam321@gmail.com",
   icon: EnvelopeSimpleIcon,
 };
 

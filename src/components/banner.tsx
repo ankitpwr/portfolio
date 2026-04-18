@@ -5,7 +5,7 @@ export default function Banner() {
     <div className="relative w-full h-36  overflow-hidden shadow-sm">
       <img
         src={banner}
-        className="w-full object-cover grayscale hover:grayscale-0 transition-all duration-400"
+        className="w-full object-cover  dark:grayscale dark:hover:grayscale-0 transition-all duration-400"
       />
     </div>
   );

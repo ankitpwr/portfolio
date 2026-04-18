@@ -1,12 +1,15 @@
 import Project from "./project";
 import { Projects } from "@/data/projects";
+import { Button } from "./ui/button";
+import { useNavigate } from "react-router-dom";
 
 export default function FeaturedProjects() {
+  const navigate = useNavigate();
   return (
-    <section className="flex flex-col gap-3 w-full">
+    <section className="flex flex-col  gap-3 w-full">
       <div className="flex items-center gap-4">
         {/* Added dynamic text colors and transitions */}
-        <h1 className="text-2xl font-semibold text-zinc-900 dark:text-zinc-100 font-geist tracking-tight transition-colors duration-300">
+        <h1 className="text-xl font-semibold text-zinc-900 dark:text-zinc-500 font-geist tracking-tight transition-colors duration-300">
           Featured Projects
         </h1>
         {/* Adjusted the gradient line so it fades cleanly in light mode */}
@@ -30,6 +33,15 @@ export default function FeaturedProjects() {
             />
           </Project>
         ))}
+      </div>
+      <div className="w-full flex items-center justify-center mt-8">
+        <Button
+          onClick={() => navigate("/projects")}
+          variant={"outline"}
+          className="w-36 font-figtree rounded-lg p-4 cursor-pointer"
+        >
+          Show all projects
+        </Button>
       </div>
     </section>
   );

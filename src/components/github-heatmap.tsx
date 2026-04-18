@@ -15,7 +15,7 @@ export function GithubHeatmaps() {
     <section className="flex flex-col gap-6 w-full">
       {/* Section Header */}
       <div className="flex items-center gap-4">
-        <h1 className="text-2xl font-semibold text-zinc-900 dark:text-zinc-100 font-geist tracking-tight transition-colors duration-300">
+        <h1 className="text-xl font-semibold text-zinc-900 dark:text-zinc-500 font-geist tracking-tight transition-colors duration-300">
           GitHub Activity
         </h1>
         <div className="h-[1px] flex-grow bg-gradient-to-r from-zinc-300 dark:from-zinc-800 to-transparent transition-colors duration-300"></div>
@@ -27,7 +27,7 @@ export function GithubHeatmaps() {
           username={githubUsername}
           colorScheme={isDark ? "dark" : "light"}
           theme={explicitTheme}
-          blockSize={11}
+          blockSize={12}
           blockMargin={4}
           fontSize={14}
           style={{
