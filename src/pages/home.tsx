@@ -9,15 +9,14 @@ import Skills from "@/components/skills";
 
 export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col transition-colors duration-300">
+    <div className="min-h-screen flex flex-col transition-colors duration-300 ">
       <main className="mx-auto max-w-[53rem]">
         {" "}
-        {/* max-w-204 translates to ~51rem */}
         <Banner />
         <Profile />
         <Description />
         <Contacts />
-        <div className="mt-20 flex flex-col gap-14">
+        <div className="mt-20 flex flex-col gap-20">
           <Skills />
           <GithubHeatmaps />
           <FeaturedProjects />

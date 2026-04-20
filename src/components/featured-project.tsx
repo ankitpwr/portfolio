@@ -6,14 +6,13 @@ import { useNavigate } from "react-router-dom";
 export default function FeaturedProjects() {
   const navigate = useNavigate();
   return (
-    <section className="flex flex-col  gap-3 w-full">
+    <section className="flex flex-col w-full">
+      <div className="h-[1px] flex-grow bg-gradient-to-r bg-zinc-300 dark:bg-zinc-900 mb-6 "></div>
+
       <div className="flex items-center gap-4">
-        {/* Added dynamic text colors and transitions */}
         <h1 className="text-xl font-semibold text-zinc-900 dark:text-zinc-500 font-geist tracking-tight transition-colors duration-300">
           Featured Projects
         </h1>
-        {/* Adjusted the gradient line so it fades cleanly in light mode */}
-        <div className="h-[1px] flex-grow bg-gradient-to-r from-zinc-300 dark:from-zinc-800 to-transparent transition-colors duration-300"></div>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">

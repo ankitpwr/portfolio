@@ -34,11 +34,12 @@ export default function Skills() {
 
   return (
     <section className="flex flex-col w-full">
+      <div className="h-[1px] flex-grow bg-gradient-to-r bg-zinc-300 dark:bg-zinc-900 mb-6 "></div>
+
       <div className="flex items-center gap-4">
         <h1 className="text-xl font-semibold dark:text-zinc-500 text-zinc-900 font-geist tracking-tight transition-colors duration-300">
           Skills & Tools
         </h1>
-        <div className="h-[1px] flex-grow bg-gradient-to-r from-zinc-300 dark:from-zinc-800 to-transparent transition-colors duration-300"></div>
       </div>
 
       <div className="flex flex-col gap-1 relative overflow-hidden w-full py-2">
