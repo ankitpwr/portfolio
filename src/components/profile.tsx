@@ -3,6 +3,7 @@ import { Clock, MapPin } from "@phosphor-icons/react";
 import { format } from "date-and-time";
 import { useEffect, useState } from "react";
 import PixelTransition from "./PixelTransition";
+import RotatingText from "./rotatingTest";
 
 export default function Profile() {
   const [time, setTime] = useState<string>(`${format(new Date(), "HH:mm:ss")}`);
@@ -42,11 +43,25 @@ export default function Profile() {
         <h1 className="font-geist text-3xl sm:text-4xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100 transition-colors duration-300">
           {name}
         </h1>
-        <div className="font-geist text-base font-medium text-zinc-600 dark:text-zinc-400 transition-colors duration-300">
-          {role}
+        <div className=" text-base font-medium text-zinc-600 dark:text-zinc-400 transition-colors duration-300">
+          <RotatingText
+            texts={role}
+            mainClassName=""
+            staggerFrom="center"
+            initial={{ y: "100%" }}
+            animate={{ y: 0 }}
+            exit={{ y: "-120%" }}
+            staggerDuration={0.05}
+            splitLevelClassName="overflow-hidden pb-0.5 sm:pb-1 md:pb-1"
+            transition={{ type: "spring", damping: 30, stiffness: 400 }}
+            rotationInterval={4000}
+            splitBy="words"
+            auto
+            loop
+          />
         </div>
 
-        <div className="mt-1 flex flex-wrap gap-4 font-mono text-xs text-zinc-600 dark:text-zinc-400">
+        {/* <div className="mt-1 flex flex-wrap gap-4 font-mono text-xs text-zinc-600 dark:text-zinc-400">
           <div className="flex items-center gap-1.5 rounded-full bg-zinc-100 dark:bg-white/5 px-2.5 py-1 border border-zinc-200 dark:border-white/10 transition-colors duration-300">
             <MapPin weight="fill" />
             <span>{location}</span>
@@ -55,7 +70,7 @@ export default function Profile() {
             <Clock weight="fill" />
             <span suppressHydrationWarning>{time}</span>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

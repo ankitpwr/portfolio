@@ -260,7 +260,6 @@ const BorderGlow: React.FC<BorderGlowProps> = ({
           : "rgba(0,0,0,0.03) 0 4px 12px, rgba(0,0,0,0.01) 0 16px 32px",
       }}
     >
-      {/* mesh gradient border */}
       <div
         className="absolute inset-0 rounded-[inherit] -z-[1]"
         style={{
