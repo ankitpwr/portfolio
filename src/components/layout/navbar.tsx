@@ -23,9 +23,9 @@ export default function Navbar() {
           animateOn="inViewHover"
           revealDirection="start"
           sequential={true}
-          characters="ABCD1234!?"
+          useOriginalCharsOnly
           speed={30}
-          maxIterations={20}
+          maxIterations={11}
           className="text-sm  font-semibold tracking-tight text-zinc-900 dark:text-zinc-200 hover:text-zinc-600 dark:hover:text-white transition-colors cursor-pointer"
         />
 

@@ -12,7 +12,6 @@ export default function Home() {
     <div className="min-h-screen flex flex-col transition-colors duration-300 ">
       <main className="mx-auto max-w-[53rem]">
         {" "}
-        <Banner />
         <Profile />
         <Description />
         <Contacts />
