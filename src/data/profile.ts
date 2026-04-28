@@ -13,4 +13,4 @@ export const profileImage = whiplash;
 export const location = "India";
 export const banner = bannerImg;
 export const description =
-  "A developer focused on building scalable and user-centric web applications. I enjoy turning ideas into real products using React, Node.js, and TypeScript, with a strong focus on performance,";
+  "A developer focused on building user-centric web applications. I enjoy turning ideas into real products using React, Node.js, and TypeScript, with a strong focus on performance.";

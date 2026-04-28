@@ -56,7 +56,8 @@ export const Projects: ProjectData[] = [
     description:
       "Detox is a Chrome extension that transforms YouTube into a distraction-free learning platform by filtering your feed to only show videos related to your current focus topic.",
     techStack: ["Typescript", "Chrome Extension API", "Manifest V3"],
-    liveLink: "https://github.com/ankitpwr/DetoxYT.git",
+    liveLink:
+      "https://microsoftedge.microsoft.com/addons/detail/fllgkplkbdpcbbfniichdhgndicdjgpn",
     githubLink: "https://github.com/ankitpwr/DetoxYT.git",
     image: detox,
   },
