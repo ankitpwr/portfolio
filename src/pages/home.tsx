@@ -1,4 +1,3 @@
-import Banner from "@/components/banner";
 import Contacts from "@/components/contacts";
 import Description from "@/components/description";
 import FeaturedProjects from "@/components/featured-project";
