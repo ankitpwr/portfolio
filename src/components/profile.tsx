@@ -1,31 +1,16 @@
 import { name, profileImage, role } from "@/data/profile";
 
-import { format } from "date-and-time";
-import { useEffect, useState } from "react";
 import PixelTransition from "./PixelTransition";
 import RotatingText from "./rotatingTest";
 
 export default function Profile() {
-  const [time, setTime] = useState<string>(`${format(new Date(), "HH:mm:ss")}`);
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setTime(`${format(new Date(), "HH:mm:ss")}`);
-    }, 1000);
-    return () => clearInterval(timer);
-  }, []);
-
   return (
-    // 1. Increased top margin (mt-24) to give breathing room from the navbar.
-    // 2. Changed to items-center so the image and text balance each other vertically.
     <div className="relative z-10 flex flex-col sm:flex-row items-center sm:items-center gap-6 sm:gap-8 mt-24 px-2 sm:px-4">
-      {/* Avatar Container: Added shrink-0 so it doesn't squish, and p-1.5 for the glass border */}
       <div className="shrink-0 rounded-2xl bg-white/40 dark:bg-[#060010]/50 backdrop-blur-sm shadow-xl border border-white/60 dark:border-white/10 transition-all duration-300 p-1.5">
         <PixelTransition
           firstContent={
             <img
               src={profileImage}
-              // Fixed invalid h-26/w-26. Standardized to h-24 (mobile) and h-28 (desktop).
               className="h-24 w-24 sm:h-28 sm:w-28 rounded-xl object-cover dark:grayscale hover:grayscale-0 transition-all duration-500"
             />
           }
