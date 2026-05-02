@@ -1,6 +1,5 @@
 import Project from "@/components/project";
 import { Projects } from "@/data/projects";
-import React from "react";
 
 export default function ProjectPage() {
   return (

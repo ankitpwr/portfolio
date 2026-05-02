@@ -1,7 +1,6 @@
 import orbit from "../assets/orbit-lookup-1.png";
 import sketch from "../assets/sketch-lookup-1.png";
 import detox from "../assets/extension-on.png";
-import luminous from "../assets/luminous-lookup.png";
 import luminous2 from "../assets/luminous-lookup-2.png";
 
 export interface ProjectData {

@@ -1,5 +1,5 @@
-import { location, name, profileImage, role } from "@/data/profile";
-import { Clock, MapPin } from "@phosphor-icons/react";
+import { name, profileImage, role } from "@/data/profile";
+
 import { format } from "date-and-time";
 import { useEffect, useState } from "react";
 import PixelTransition from "./PixelTransition";
