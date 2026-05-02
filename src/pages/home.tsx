@@ -5,6 +5,7 @@ import Footer from "@/components/footer";
 import { GithubHeatmaps } from "@/components/github-heatmap";
 import Profile from "@/components/profile";
 import Skills from "@/components/skills";
+import Blog from "../components/blog";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
           <Skills />
           <GithubHeatmaps />
           <FeaturedProjects />
+          <Blog />
           <Footer />
         </div>
       </main>
