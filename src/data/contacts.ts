@@ -15,13 +15,13 @@ export interface ContactData {
 
 export const Github: ContactData = {
   title: "Github",
-  link: "https://github.com/ankit_pam",
+  link: "https://github.com/ankitpwr",
   icon: GithubLogoIcon,
 };
 
 export const LinkedIn: ContactData = {
   title: "LinkedIn",
-  link: "https://linkedin.com/in/ankit_pam",
+  link: "https://www.linkedin.com/in/ankit-panwar-30a997342/",
   icon: LinkedinLogoIcon,
 };
 
@@ -39,6 +39,6 @@ export const Email: ContactData = {
 
 export const Resume: ContactData = {
   title: "Resume",
-  link: "https://example.com/resume.pdf",
+  link: "https://drive.google.com/file/d/1vdNuZMZxCgGCPq2-o2p8BtJvgHuYPzha/view",
   icon: FileArrowDownIcon,
 };
