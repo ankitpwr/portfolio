@@ -1,6 +1,3 @@
-import axios from "axios";
-import { useEffect, useState } from "react";
-
 export default function Footer() {
   return (
     <footer className="w-full flex flex-col gap-6 mt-20 pb-8 font-geist">
