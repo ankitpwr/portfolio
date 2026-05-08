@@ -17,7 +17,7 @@ export default function Navbar() {
 
   return (
     <nav className="sticky top-0 z-50 w-fit flex mx-auto   backdrop-blur-md bg-white/70 dark:bg-[#060010]/60 border-b border-zinc-200 dark:border-white/5 transition-colors duration-300">
-      <div className="mx-auto flex w-[53rem] items-center justify-between px-4 sm:px-6 lg:px-8 py-4 ">
+      <div className="mx-auto flex w-screen md:w-[53rem] items-center justify-between px-4 sm:px-6 lg:px-8 py-4 ">
         <DecryptedText
           text="~/ankit_panwar"
           animateOn="inViewHover"
@@ -26,10 +26,10 @@ export default function Navbar() {
           useOriginalCharsOnly
           speed={30}
           maxIterations={11}
-          className="text-sm  font-semibold tracking-tight text-zinc-900 dark:text-zinc-200 hover:text-zinc-600 dark:hover:text-white transition-colors cursor-pointer"
+          className=" text-[10px] md:text-sm  font-semibold tracking-tight text-zinc-900 dark:text-zinc-200 hover:text-zinc-600 dark:hover:text-white transition-colors cursor-pointer"
         />
 
-        <div className="flex gap-6 text-sm font-medium items-center text-zinc-600 dark:text-zinc-400">
+        <div className="flex gap-3 md:gap-6 text-[10px] md:text-sm font-medium items-center justify-center text-zinc-600 dark:text-zinc-400">
           <p
             onClick={() => navigate("/")}
             className="hover:text-zinc-900 dark:hover:text-white transition-colors cursor-pointer"

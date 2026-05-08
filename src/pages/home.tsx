@@ -9,8 +9,8 @@ import Blog from "../components/blog";
 
 export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col transition-colors duration-300 ">
-      <main className="mx-auto max-w-[53rem]">
+    <div className="md:min-h-screen flex flex-col transition-colors duration-300 ">
+      <main className="  mx-auto w-full px-4 md:px-0 max-w-[53rem]">
         {" "}
         <Profile />
         <Description />
