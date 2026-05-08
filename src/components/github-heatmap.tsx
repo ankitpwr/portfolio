@@ -12,7 +12,7 @@ export function GithubHeatmaps() {
   };
 
   return (
-    <section className="flex flex-col gap-6 w-full">
+    <section className="flex flex-col gap-6 w-full px-4 md:px-0">
       <div className="h-[1px] flex-grow bg-gradient-to-r bg-zinc-300 dark:bg-zinc-900  "></div>
 
       <div className="flex items-center gap-4">

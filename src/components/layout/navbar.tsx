@@ -16,7 +16,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="sticky top-0 z-50 w-fit flex mx-auto   backdrop-blur-md bg-white/70 dark:bg-[#060010]/60 border-b border-zinc-200 dark:border-white/5 transition-colors duration-300">
+    <nav className="sticky top-0 z-50 w-fit flex mx-auto   backdrop-blur-md bg-white/70 dark:bg-black border-b border-zinc-200 dark:border-white/5 transition-colors duration-300">
       <div className="mx-auto flex w-screen md:w-[53rem] items-center justify-between px-4 sm:px-6 lg:px-8 py-4 ">
         <DecryptedText
           text="~/ankit_panwar"

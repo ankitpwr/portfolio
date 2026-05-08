@@ -18,7 +18,7 @@ export default function Contacts() {
   ];
 
   return (
-    <div className="mt-4 px-2 sm:px-4 flex flex-wrap gap-3">
+    <div className="mt-4 px-4 md:px-0 flex flex-wrap gap-3">
       {availableContacts.map((contact) => {
         const IconComponent = contact.icon;
 

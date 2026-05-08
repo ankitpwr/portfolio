@@ -3,17 +3,21 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/home";
 import MarginContainer from "./components/layout/margin-container";
 import ProjectPage from "./pages/project-page";
+import { Analytics } from "@vercel/analytics/react";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route element={<MarginContainer />}>
-          <Route path="/" element={<Home />} />
-          <Route path="/projects" element={<ProjectPage />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
+    <>
+      <BrowserRouter>
+        <Routes>
+          <Route element={<MarginContainer />}>
+            <Route path="/" element={<Home />} />
+            <Route path="/projects" element={<ProjectPage />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
+      <Analytics />
+    </>
   );
 }
 

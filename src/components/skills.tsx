@@ -33,10 +33,10 @@ export default function Skills() {
   }));
 
   return (
-    <section className="flex flex-col w-full">
+    <section className="flex flex-col w-full px-4 md:px-0 ">
       <div className="h-[1px] flex-grow bg-gradient-to-r bg-zinc-300 dark:bg-zinc-900 mb-6 "></div>
 
-      <div className="flex items-center gap-4">
+      <div className="flex items-center gap-4 ">
         <h1 className="text-xl font-semibold dark:text-zinc-500 text-zinc-900 font-geist tracking-tight transition-colors duration-300">
           Skills & Tools
         </h1>
@@ -53,7 +53,7 @@ export default function Skills() {
           scaleOnHover
           fadeOut={true}
           // #fafafa is the exact hex for Tailwind's bg-zinc-50
-          fadeOutColor={isDark ? "#060010" : "#fafafa"}
+          fadeOutColor={isDark ? "#000000" : "#fafafa"}
           ariaLabel="Frontend Technology Stack"
         />
 

@@ -4,8 +4,7 @@ import RotatingText from "./rotatingTest";
 
 export default function Profile() {
   return (
-    <div className="relative z-10 flex flex-col md:flex-row items-center md:items-center gap-6 md:gap-8 mt-12 md:mt-24">
-      {/* 👇 Added w-fit and h-fit here to kill the long rectangle issue 👇 */}
+    <div className="relative z-10 flex flex-row items-center md:items-center gap-6 md:gap-8 mt-12 md:mt-24 px-4 md:px-0">
       <div className="w-fit h-fit rounded-2xl bg-white/40 dark:bg-[#060010]/50 backdrop-blur-sm shadow-xl border border-white/60 dark:border-white/10 transition-all duration-300 p-1.5 flex-shrink-0">
         <PixelTransition
           firstContent={
@@ -29,11 +28,11 @@ export default function Profile() {
       </div>
 
       <div className="flex flex-col items-center sm:items-start gap-2 text-center sm:text-left">
-        <h1 className="font-geist text-3xl md:text-[42px] font-bold tracking-tight text-zinc-900 dark:text-zinc-100 transition-colors duration-300 leading-none sm:leading-tight">
+        <h1 className="font-geist text-2xl md:text-[42px] font-bold tracking-tight text-zinc-900 dark:text-zinc-100 transition-colors duration-300 leading-none sm:leading-tight">
           {name}
         </h1>
 
-        <div className="text-base sm:text-lg font-medium text-zinc-600 dark:text-zinc-400 transition-colors duration-300">
+        <div className="text-sm sm:text-lg font-medium text-zinc-600 dark:text-zinc-400 transition-colors duration-300">
           <RotatingText
             texts={role}
             mainClassName=""
