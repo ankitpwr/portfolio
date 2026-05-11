@@ -11,15 +11,7 @@ export default function Footer() {
           </span>
         </p>
 
-        {/* <div className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-white dark:bg-zinc-900/40 border border-zinc-200 dark:border-zinc-800/50 shadow-sm dark:shadow-none backdrop-blur-sm transition-all duration-300">
-          <span className="relative flex h-2 w-2">
-            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-            <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
-          </span>
-          <span className="tracking-wide text-zinc-700 dark:text-zinc-300 transition-colors duration-300">
-            {stats.visitors.toLocaleString()}
-          </span>
-        </div> */}
+    
       </div>
     </footer>
   );
