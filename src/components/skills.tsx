@@ -10,7 +10,7 @@ export default function Skills() {
   const frontendTech = FrontendSkill.map((skill) => ({
     node: (
       <SkillLogo title={skill.name}>
-        <skill.Icon className="w-5 h-5 text-zinc-700 dark:text-zinc-300" />
+        <skill.Icon className="w-[20px] h-[20px] text-zinc-700 dark:text-zinc-300" />
       </SkillLogo>
     ),
   }));
@@ -18,7 +18,7 @@ export default function Skills() {
   const backendTech = BackendSkill.map((skill) => ({
     node: (
       <SkillLogo title={skill.name}>
-        <skill.Icon className="w-5 h-5 text-zinc-700 dark:text-zinc-300" />
+        <skill.Icon className="w-[20px] h-[20px] text-zinc-700 dark:text-zinc-300" />
       </SkillLogo>
     ),
   }));
