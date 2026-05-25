@@ -1,4 +1,3 @@
-import StackIcon from "tech-stack-icons";
 import LogoLoop from "./LogoLoop";
 import SkillLogo from "./skills-logos";
 import { BackendSkill, FrontendSkill } from "@/data/skills";
@@ -10,24 +9,16 @@ export default function Skills() {
 
   const frontendTech = FrontendSkill.map((skill) => ({
     node: (
-      <SkillLogo title={`${skill.charAt(0).toUpperCase() + skill.slice(1)}`}>
-        <StackIcon
-          name={`${skill}`}
-          variant={isDark ? "dark" : "light"}
-          className="w-4 h-4"
-        />
+      <SkillLogo title={skill.name}>
+        <skill.Icon className="w-5 h-5 text-zinc-700 dark:text-zinc-300" />
       </SkillLogo>
     ),
   }));
 
   const backendTech = BackendSkill.map((skill) => ({
     node: (
-      <SkillLogo title={`${skill.charAt(0).toUpperCase() + skill.slice(1)}`}>
-        <StackIcon
-          name={`${skill}`}
-          variant={isDark ? "dark" : "light"}
-          className="w-4 h-4"
-        />
+      <SkillLogo title={skill.name}>
+        <skill.Icon className="w-5 h-5 text-zinc-700 dark:text-zinc-300" />
       </SkillLogo>
     ),
   }));
@@ -52,7 +43,6 @@ export default function Skills() {
           hoverSpeed={10}
           scaleOnHover
           fadeOut={true}
-          // #fafafa is the exact hex for Tailwind's bg-zinc-50
           fadeOutColor={isDark ? "#000000" : "#fafafa"}
           ariaLabel="Frontend Technology Stack"
         />
