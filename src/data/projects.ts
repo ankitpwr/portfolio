@@ -18,7 +18,7 @@ export const Projects: ProjectData[] = [
     description:
       "An uptime monitoring system where users register websites, APIs.  orbit will perform continuous health checks, triggers email alerts on failures, and show latency trends and status heatmaps.",
     techStack: ["React", "NodeJs", "Redis", "Prisma", "Supabase", "Docker"],
-    liveLink: "https://github.com/ankitpwr/Orbit.git",
+    liveLink: "https://orbit.ankitpwr.me",
     githubLink: "https://github.com/ankitpwr/Orbit.git",
     image: orbit,
   },
@@ -36,7 +36,7 @@ export const Projects: ProjectData[] = [
       "Perfect Freehand",
       "Prisma",
     ],
-    liveLink: "https://sketch-frontend-hazel.vercel.app",
+    liveLink: "https://sketch.ankitpwr.me",
     githubLink: "https://github.com/ankitpwr/Sketch.git",
     image: sketch,
   },
