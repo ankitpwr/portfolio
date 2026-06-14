@@ -1,10 +1,8 @@
 import type { IconType } from "react-icons";
 import {
-  SiReact,
   SiTailwindcss,
   SiNextdotjs,
   SiBun,
-  SiNodedotjs,
   SiExpress,
   SiSocketdotio,
   SiPrisma,
@@ -16,8 +14,6 @@ import { GiBearFace } from "react-icons/gi";
 import { LiaAws } from "react-icons/lia";
 import { BiLogoTypescript, BiLogoJavascript } from "react-icons/bi";
 import { RiReactjsFill } from "react-icons/ri";
-import { DiRedis } from "react-icons/di";
-import { BiLogoPostgresql } from "react-icons/bi";
 import { FaNodeJs } from "react-icons/fa";
 
 export type Skill = {
