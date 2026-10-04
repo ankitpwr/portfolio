@@ -39,6 +39,6 @@ export const Email: ContactData = {
 
 export const Resume: ContactData = {
   title: "Resume",
-  link: "https://drive.google.com/file/d/1bOBhZKAuGwKw4LohT-f8wBDefZjarzCh/view?usp=sharing",
+  link: "https://drive.google.com/file/d/1X3UI1mOi2HDi3dq1yXU2EjvolbDiqacB/view?usp=sharing",
   icon: FileArrowDownIcon,
 };
