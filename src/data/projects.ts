@@ -2,6 +2,7 @@ import orbit from "../assets/orbit-lookup-1.png";
 import sketch from "../assets/sketch-lookup-1.png";
 import detox from "../assets/extension-on.png";
 import luminous2 from "../assets/luminous-lookup-2.png";
+import fintel from "../assets/fintel.png";
 
 export interface ProjectData {
   title: string;
@@ -21,6 +22,24 @@ export const Projects: ProjectData[] = [
     liveLink: "https://orbit.ankitpwr.me",
     githubLink: "https://github.com/ankitpwr/Orbit.git",
     image: orbit,
+  },
+
+  {
+    title: "Fintel",
+    description:
+      "financial agent that analyzes Indian stocks using the latest news, financial ratios, fundamental and technical data, company performance, and earnings call transcripts, delivering as real-time, streamed research reports.",
+    techStack: [
+      "Typescript",
+      "NodeJs",
+      "Langchain",
+      "LangGraph",
+      "DeepEval",
+      "BullMQ",
+      "Redis",
+    ],
+    liveLink: "https://fintel.ankitpwr.me",
+    githubLink: "https://github.com/ankitpwr/fintel",
+    image: fintel,
   },
 
   {
